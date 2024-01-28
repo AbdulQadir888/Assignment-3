@@ -7,9 +7,7 @@ void main() {
     {'name': 'Tom', 'eligible': false},
   ];
 
-  // Explicitly specify the type of the 'user' parameter
   usersEligibility.removeWhere((Map<String, bool> user) => user['eligible'] == false);
 
-  // Print the updated list
   print("Updated Users Eligibility: $usersEligibility");
 }
