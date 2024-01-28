@@ -1,12 +1,16 @@
 void main() {
-  // Create a list of days
-  List<String> days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-
-  print("Original list: $days");
-  
-  while (days.isNotEmpty) {
-    String removedDay = days.removeLast();
-    print("Removed day: $removedDay");
-    print("Updated list: $days");
+  List days = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ];
+  print(days);
+  for (var i = days.length - 1; i >= 0; i--) {
+    days.remove(days[i]);
+    print(days);
   }
 }
